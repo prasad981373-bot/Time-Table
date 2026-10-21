@@ -1,0 +1,6 @@
+{
+  "name": "Schedura - Student Timetable & Study Tracker",
+  "description": "Comprehensive weekly class schedule, daily agenda timeline, conflict detection, iCal export, and focused study session tracker for students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

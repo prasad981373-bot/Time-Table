@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="scheduraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#scheduraGrad)"/>
+
+  <!-- Subtle grid pattern in background -->
+  <g opacity="0.08" stroke="#FFFFFF" stroke-width="2">
+    <line x1="96" y1="96" x2="416" y2="96"/>
+    <line x1="96" y1="176" x2="416" y2="176"/>
+    <line x1="96" y1="256" x2="416" y2="256"/>
+    <line x1="96" y1="336" x2="416" y2="336"/>
+    <line x1="96" y1="416" x2="416" y2="416"/>
+    <line x1="176" y1="96" x2="176" y2="416"/>
+    <line x1="256" y1="96" x2="256" y2="416"/>
+    <line x1="336" y1="96" x2="336" y2="416"/>
+  </g>
+
+  <!-- Main Timetable & Clock Emblem -->
+  <g filter="url(#shadow)">
+    <!-- Calendar Card -->
+    <rect x="116" y="128" width="280" height="264" rx="36" fill="#FFFFFF"/>
+    
+    <!-- Header band -->
+    <path d="M116 164 C116 144.1 132.1 128 152 128 L360 128 C379.9 128 396 144.1 396 164 L396 196 L116 196 Z" fill="#4338CA"/>
+
+    <!-- Calendar Ring Pins -->
+    <rect x="176" y="104" width="20" height="44" rx="10" fill="#F59E0B"/>
+    <rect x="316" y="104" width="20" height="44" rx="10" fill="#F59E0B"/>
+
+    <!-- Schedule blocks inside calendar -->
+    <rect x="148" y="224" width="96" height="40" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="2"/>
+    <rect x="160" y="238" width="56" height="6" rx="3" fill="#4F46E5"/>
+    <rect x="160" y="248" width="40" height="4" rx="2" fill="#818CF8"/>
+
+    <rect x="256" y="224" width="108" height="72" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="2"/>
+    <rect x="268" y="238" width="68" height="6" rx="3" fill="#059669"/>
+    <rect x="268" y="248" width="48" height="4" rx="2" fill="#34D399"/>
+
+    <rect x="148" y="276" width="96" height="88" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="2"/>
+    <rect x="160" y="292" width="64" height="6" rx="3" fill="#D97706"/>
+    <rect x="160" y="302" width="44" height="4" rx="2" fill="#FBBF24"/>
+
+    <!-- Clock / Focus badge in bottom right corner of calendar -->
+    <circle cx="330" cy="336" r="42" fill="#4F46E5" stroke="#FFFFFF" stroke-width="5"/>
+    <circle cx="330" cy="336" r="34" fill="#312E81"/>
+    <!-- Clock Hands at 10:10 -->
+    <line x1="330" y1="336" x2="318" y2="320" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="330" y1="336" x2="344" y2="328" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="330" cy="336" r="4" fill="#F59E0B"/>
+  </g>
+</svg>
